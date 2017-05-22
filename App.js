@@ -1,4 +1,3 @@
-// ZMIANY ZE SKRYPTU
 var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
   'X-Client-Id': '1749',
