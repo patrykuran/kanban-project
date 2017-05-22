@@ -1,4 +1,5 @@
 // KLASA KANBAN CARD
+
 function Card(id, name) {
 	var self = this;
 	
