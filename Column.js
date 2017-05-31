@@ -11,7 +11,7 @@ function Column(id, name) {
 		var columnTitle = $('<h2 class="column-title">' + self.name + '</h2>');
 		var columnCardList = $('<ul class="card-list"></ul>');
 		var columnDelete = $('<button class="btn btn-delete btn-danger">x</button>');
-		var columnAddCard = $('<button class="btn add-card btn-info">Dodaj kartę</button>');
+		var columnAddCard = $('<button class="btn add-card btn-info">Add a Card</button>');
 		
 		// PODPINANIE ODPOWIEDNICH ZDARZEŃ POD WĘZŁY
 		columnDelete.click(function() {
@@ -19,7 +19,7 @@ function Column(id, name) {
 		});
 		
 		columnAddCard.click(function(event) {
-			var cardName = prompt("Wpisz nazwę karty");
+			var cardName = prompt("Add Card's Name");
 			event.preventDefault();
 				$.ajax({
 				    url: baseUrl + '/card',
